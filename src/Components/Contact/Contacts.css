@@ -1,0 +1,153 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  background: rgb(231, 231, 231);
+  width: 100%;
+  color: black;
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.contact-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 400px;
+}
+.contact-left h2 {
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.5rem 0 1rem 3rem;
+}
+
+.contact-details div .icon {
+  color: rgb(180, 50, 50);
+}
+
+.contact-left div p {
+  padding: 0 1rem;
+}
+
+.contact-left ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.contact-left ul li {
+  margin: 0 1rem;
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  line-height: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: rgb(180, 50, 50);
+}
+.contact-left ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* ------------------------ right--------------- */
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 1rem 1rem 1rem;
+
+  border-radius: 5px;
+  height: 400px;
+}
+
+.contact-right label {
+  font-size: 18px;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  font-weight: 500;
+}
+
+.contact-right input,
+textarea {
+  border: none;
+  outline: none;
+  border: 1px solid rgb(180, 50, 50);
+  width: 350px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+  resize: none;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.6;
+}
+
+/* ------- media secreen */
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0 auto;
+  }
+
+  .contact-left {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    background: black;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+
+  .contact-details div {
+    margin: 1rem 0 0 3rem;
+  }
+
+  .contact-right {
+    height: max-content;
+  }
+}
+
+/* ------------------- media screen ---------------- */
+
+@media screen and (max-width: 360px) {
+  .contact-right label {
+    font-size: 18px;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .contact-right input,
+  textarea {
+    width: 280px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+}

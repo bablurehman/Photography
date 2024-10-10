@@ -1,0 +1,124 @@
+#explore-more {
+  flex-direction: column;
+  max-width: 60%;
+  color: white;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.explore-more-container {
+  position: relative;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+  padding: 1px;
+}
+
+.explore-more-container p {
+  font-size: 13px;
+  color: black;
+  padding: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.explore-more-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 430px;
+}
+
+#explore-more .slick-slide div {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+  margin: auto 2rem;
+}
+
+#explore-more .slick-arrow:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(180, 50, 50);
+  font-size: 40px;
+}
+
+/* ----------------- media --------------- */
+
+@media screen and (max-width: 1050px) {
+  #explore-more {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .explore-more-container img {
+    height: 350px;
+  }
+
+  #explore-more .slick-slide div {
+    margin: auto 10px;
+  }
+
+  #explore-more .slick-arrow:before {
+    font-size: 35px;
+  }
+
+  #explore-more button.slick-arrow.slick-prev,
+  #explore-more .slick-next {
+    margin: 0 -1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .explore-more-container img {
+    height: 280px;
+  }
+
+  #explore-more .slick-arrow:before {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .explore-more-container img {
+    height: 250px;
+  }
+
+  #explore-more .slick-arrow:before {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .explore-more-container img {
+    height: 200px;
+  }
+
+  #explore-more .slick-arrow:before {
+    font-size: 30px;
+    color: black;
+  }
+
+  #explore-more button.slick-arrow.slick-prev,
+  #explore-more .slick-next {
+    margin: 0 4rem;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #explore-more {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .explore-more-container img {
+    height: 150px;
+  }
+
+  #explore-more .slick-arrow:before {
+    font-size: 25px;
+  }
+
+  #explore-more button.slick-arrow.slick-prev,
+  #explore-more .slick-next {
+    margin: 0 3rem;
+    z-index: 1;
+  }
+}
