@@ -1,5 +1,8 @@
+import React from "react";
+
 import "./Heros.css";
 import HeroData from "./HeroData";
+
 
 const Hero = () => {
   return (
@@ -16,7 +19,28 @@ const Hero = () => {
           </p>
         </div>
 
-        <HeroData />
+<HeroData/>
+
+        {/* <HeroData 
+        text="Photographer : Charles Ebbets - Lunch Atop a Skyscraper"
+        photo={h_1}
+        />
+        <HeroData 
+        text="Photographer : Robert Capa - The Falling Soldier, Córdoba front"
+        photo={h_2}
+        />
+        <HeroData 
+        text="Photographer : Malcolm Browne - Burning Monk, South Vietnam"
+        photo={h_3}
+        />
+        <HeroData 
+        text="Photographer : Eddie Adams - Saigon Execution"
+        photo={h_4}
+        />
+        <HeroData 
+        text="Photographer : John Filo - The image subject of the anti-war protests at Kent State"
+        photo={h_5}
+        /> */}
       </div>
     </div>
   );

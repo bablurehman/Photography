@@ -8,10 +8,6 @@ import {TrendingData} from './TrendingData';
 
 import "./Trendings.css";
 
-
-
-
-
 const Trendings = () => {
   var settings = {
     // dots: true,
@@ -20,7 +16,6 @@ const Trendings = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     centerPadding: "20px",
-
     initialSlide: 0,
     responsive: [
       {
@@ -59,7 +54,6 @@ const Trendings = () => {
             {TrendingData.map((slides, index) => (
             <section className="trending-container" key={index}>
                 <img src={slides.image} alt="" />
-                  
                    <p> <span>{slides.no}</span> {slides.text}</p>
               </section>
             ))}

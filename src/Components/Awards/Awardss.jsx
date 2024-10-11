@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import "./Awardss.css";
 import AwardsData from "./AwardsData";
 
-import ipa_1 from "../../assets/ipa1.jpg";
-import ipa_2 from "../../assets/ipa2.jpg";
-import ipa_3 from "../../assets/ipa3.jpg";
+import ipa_1 from "../../assets/ipa1.png";
+import ipa_2 from "../../assets/ipa2.png";
+import ipa_3 from "../../assets/ipa3.png";
 
 const Awardss = () => {
   const [change, setChange] = useState("first");
